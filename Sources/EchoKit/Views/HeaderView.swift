@@ -92,6 +92,8 @@ extension HeaderView {
 extension HeaderView {
     
     private func setupUI() {
+        titleLabel.text = "\(Project.name) \(Project.version)(\(Project.buildNumber))"
+        
         actionButton.imageView?.contentMode = .scaleAspectFill
         actionButton.imageView?.translatesAutoresizingMaskIntoConstraints = false
         actionButton.imageView?.widthAnchor.constraint(equalToConstant: 18).isActive = true
